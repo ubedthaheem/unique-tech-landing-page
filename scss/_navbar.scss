@@ -1,0 +1,29 @@
+.navbar {
+    background-color: $main-color;
+    padding-top: 22px;
+    padding-bottom: 10px;
+    .navbar-brand {
+        text-transform: uppercase;
+        font-family: 'Roboto Black';
+        .bordered{
+            padding: 3px 8px 3px 8px;
+            border: 2px solid $color-border;
+            color: $white-color;
+        }
+    }
+
+    button{
+        border: none;
+    }
+    .navbar-nav {
+        font-weight: 600;
+        a{
+            letter-spacing: normal;
+            &:hover{
+                color: $white-color;
+                transition: all 0.2s;
+            }
+        }
+         
+    }
+}

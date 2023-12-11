@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unique Tech</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+            
+            window.addEventListener('scroll', function() {
+               
+                if (window.scrollY > 200) {
+                    document.getElementById('navbar_top').classList.add('fixed-top');
+                    // add padding top to show content behind navbar
+                    navbar_height = document.querySelector('.navbar').offsetHeight;
+                    document.body.style.paddingTop = navbar_height + 'px';
+                } else {
+                     document.getElementById('navbar_top').classList.remove('fixed-top');
+                     // remove padding top from body
+                    document.body.style.paddingTop = '0';
+                } 
+            });
+        }); 
+        // DOMContentLoaded  end
+    </script>
+
+  </head>
+  <body>
+    <nav id="navbar_top" class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+            <span class="bordered">unique</span>
+            tech
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Academic</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact us</a>
+            </li>
+             
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+ 
+    <header class="hero">
+        <div class="container">
+            <div class="home-page">
+                <!--= image arrow =-->
+                <div class="d-none d-sm-block text-center">
+                    <img src="images/arrow-right.png" alt="Arrow">
+                </div>
+                <!--/= End image arrow =-->
+                <div class="row">
+                    <!--= left side content =-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <h1 class="">UNIQUE-TECH<br>APP DEVELOPMENT </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.  laborum. Sed ut perspiciatis unde omnis iste. natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi  architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. voluptatem sequi. nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                        <a href="#" class="btn btn-theme btn-secondary ">View More<i class="fas fa-paper-plane ms-1"></i></a>
+                    </div>
+                    <!--/= End left side content =-->
+                    <!--= right side image sliders =-->
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="image-sliders">
+                            <img src="images/responsive-screens.png" class="mt-5 img-fluid" alt="">
+                        </div>
+                    </div>
+                    <!--/= End right side image sliders =-->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--= Start Main  =-->
+    <main class="main">
+        <!-- ========== Start Section What We Do ========== -->
+        <section class="section container">
+            <div class="section-header d-flex justify-content-center">
+                <h5 class="section-title h-100">What we do</h5>
+                <img src="images/right-arrow.png" class="d-none d-sm-block" style="margin-top: 10px;" alt="">
+            </div>
+            <!--= section body =-->
+            <div class="section-body">
+                <div class="row">
+                    <div class="col-6 text-center" id="rightImage1">
+                        <img src="images/laptop.png" alt="Laptop" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <h4>web desing</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim...</p>
+                        <a href="" class="btn btn-theme btn-primary shadow-sm">view more</a>
+                    </div>
+                </div>
+            </div>
+            <!--/= End section body =-->
+
+            <!--= section body =-->
+            <div class="section-body">
+                <div class="row">
+                   
+                    <div class="col-6">
+                        <h4>search engine optimization</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim...</p>
+                        <a href="" class="btn btn-theme btn-primary shadow-sm">view more</a>
+                    </div>
+                    <div class="col-6 text-center" id="rightImage1">
+                        <img src="images/laptop.png" alt="Laptop" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <!--/= End section body =-->
+
+            
+        </section>
+        <!-- ========== End Section What We Do ========== -->
+
+        <!-- ========== Start Section How We Work ========== -->
+        <section class="section bg-tiles-theme" id="how_we_work">
+            <!--= container =-->
+            <div class="container">
+                <div class="section-header d-flex justify-content-center">
+                    <img src="images/left-arrow.png" class="d-none d-sm-block" style="margin-top: 10px;" alt="">
+                    <h5 class="section-title h-100">how do we work</h5>
+                </div>
+                <div class="section-body">
+                    <img src="images/team-work.svg" alt="Team Work">
+                </div>
+            </div>
+            <!--/= End container =-->
+        </section>
+        <!-- ========== End Section How We Work ========== -->
+
+        <!-- ========== Start Section Our Features ========== -->
+        <section class="section" id="our_features">
+            <!--= container =-->
+            <div class="container">
+                <div class="section-header d-flex justify-content-center">
+                    <h5 class="section-title h-100">Our Features</h5>
+                    <img src="images/right-arrow.png" class="d-none d-sm-block" style="margin-top: 10px;" alt="">
+                </div>
+
+                <div class="section-body">
+                    <div class="row">
+                        <!--= feature card =-->
+                        <div class="col-md-4">
+                            <div class="feature-card">
+                                <div class="d-flex justify-content-between">
+                                    <div class="icon">
+                                        <i class="fa fa-file-lines"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Visual Composer</h4>
+                                        <p class="justify-text">TheFox comes with the Visual Composer Plugin. You won't need to code or to remember any shortcodes with our Theme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/= End feature card =-->
+
+                        <!--= feature card =-->
+                        <div class="col-md-4">
+                            <div class="feature-card">
+                                <div class="d-flex justify-content-between">
+                                    <div class="icon">
+                                        <i class="fa fa-tablet-screen-button"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Responsive</h4>
+                                        <p class="justify-text">TheFox comes with the Visual Composer Plugin. You won't need to code or to remember any shortcodes with our Theme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/= End feature card =-->
+
+                        <!--= feature card =-->
+                        <div class="col-md-4">
+                            <div class="feature-card">
+                                <div class="d-flex justify-content-between">
+                                    <div class="icon">
+                                        <i class="fa fa-laptop-code"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Retina Ready</h4>
+                                        <p class="justify-text">TheFox comes with the Visual Composer Plugin. You won't need to code or to remember any shortcodes with our Theme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/= End feature card =-->
+
+                        <!--= feature card =-->
+                        <div class="col-md-4">
+                            <div class="feature-card">
+                                <div class="d-flex justify-content-between">
+                                    <div class="icon">
+                                        <i class="fa fa-pen-clip"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Typography</h4>
+                                        <p class="justify-text">TheFox comes with the Visual Composer Plugin. You won't need to code or to remember any shortcodes with our Theme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/= End feature card =-->
+
+                        <!--= feature card =-->
+                        <div class="col-md-4">
+                            <div class="feature-card">
+                                <div class="d-flex justify-content-between">
+                                    <div class="icon">
+                                        <i class="fa fa-file-lines"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Theme Option Panel</h4>
+                                        <p class="justify-text">TheFox comes with the Visual Composer Plugin. You won't need to code or to remember any shortcodes with our Theme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/= End feature card =-->
+
+                        <!--= feature card =-->
+                        <div class="col-md-4">
+                            <div class="feature-card">
+                                <div class="d-flex justify-content-between">
+                                    <div class="icon">
+                                        <i class="fa fa-file-lines"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="title">Dummy Content</h4>
+                                        <p class="justify-text">TheFox comes with the Visual Composer Plugin. You won't need to code or to remember any shortcodes with our Theme.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/= End feature card =-->
+
+                    </div>
+                </div>
+            </div>
+            <!--/= End container =-->
+        </section>
+        <!-- ========== End Section Our Features ========== -->
+
+        <!-- ========== Start Section Our Packages ========== -->
+        <section class="section" id="our_packages">
+            <!--= container =-->
+            <div class="container">
+                <div class="section-header d-flex justify-content-center">
+                    <img src="images/left-arrow.png" class="d-none d-sm-block" style="margin-top: 10px;" alt="">
+                    <h5 class="section-title h-100">Our Features</h5>
+                </div>
+                <div class="section-body">
+                    <div class="row packages-container">
+                        <!--= Package Card =-->
+                        <div class="col-md-4 packages-card basic">
+                            <h4 class="title">Basic</h4>
+                            <ul class="list-unstyled offers">
+                                <li>5 web sites</li>
+                                <li>15 e-mails</li>
+                                <li>5 MySQL databases</li>
+                                <li>10 GB Storage</li>
+                            </ul>
+                            <div class="price-container justify-content-center">
+                                <h3 class="price">$5</h3>
+                                <span>/mo.</span>
+                            </div>
+                            <button type="button" class="btn btn-order-now px-5">ORDER NOW</button>
+                        </div>
+                        <!--/= End Package Card =-->
+
+                        <!--= Package Card Standerd =-->
+                        <div class="col-md-4 packages-card standard">
+                            <h4 class="title">Standard</h4>
+                            <ul class="list-unstyled offers">
+                                <li>5 web sites</li>
+                                <li>40 e-mails</li>
+                                <li>20 MySQL databases</li>
+                                <li>50 GB Storage</li>
+                            </ul>
+                           
+                            <div class="price-container  justify-content-center">
+                                <h3 class="price">$12</h3>
+                                <span>/mo.</span>
+                            </div>
+                            <button type="button" class="btn btn-order-now px-5">ORDER NOW</button>
+                        </div>
+                        <!--/= End Package Card Standerd =-->
+
+                        <!--= Package Card Premium =-->
+                        <div class="col-md-4 packages-card premium">
+                            <h4 class="title">Premium</h4>
+                            <ul class="list-unstyled offers">
+                                <li>30 web sites</li>
+                                <li>50 e-mails</li>
+                                <li>40 MySQL databases</li>
+                                <li>100 GB Storage</li>
+                            </ul>
+                            <div class="price-container  justify-content-center">
+                                <h3 class="price">$19</h3>
+                                <span>/mo.</span>
+                            </div>
+                            <button type="button" class="btn btn-order-now px-5">ORDER NOW</button>
+                        </div>
+                        <!--/= End Package Card Premium =-->
+                    </div>
+                </div>
+            </div>
+            <!--/= End container =-->
+        </section>
+        <!-- ========== End Section Our Packages ========== -->
+
+
+        <!-- ========== Start Section Our History ========== -->
+        <section class="section bg-tiles-theme our-history" id="our_history">
+            <!--= container =-->
+            <div class="container">
+                <div class="row">
+                    <!--= image =-->
+                    <div class="col-md-5 bg-white text-center p-2">
+                        <img src="images/history-img.png" class="img-fluid" alt="Our History">
+                    </div>
+                    <!--/= End image =-->
+                    <div class="col-md-7">
+                        <h5 class="section-title">Our History</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatisquasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur. odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. voluptatem sequi nesciunt. Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <button class="btn btn-theme btn-primary px-3 py-2 fw-bold">Browse Our Story</button>
+                    </div>
+                </div>
+            </div>
+            <!--/= End container =-->
+        </section>
+        <!-- ========== End Section Our History ========== -->
+        
+        <!-- ========== Start Section Team ========== -->
+        <section class="section our-team" id="our_team">
+            <!--= container =-->
+            <div class="container">
+                <div class="section-header d-flex justify-content-center">
+                    <img src="images/left-arrow.png" class="d-none d-sm-block" style="margin-top: 10px;" alt="">
+                    <h5 class="section-title h-100">Our Team members</h5>
+                </div>
+            </div>
+            <!--/= End container =-->
+            <!--= Section Body Container =-->
+            <div class="section-body">
+                <!--= Container for Profiles =-->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <!--= profile col =-->
+                        <div class="col-md-2">
+                            <div class="profile">
+                                <img src="images/team/1.png" alt="Team 1">
+                                <h5 class="name">Sayed Miraj</h5>
+                                <p class="designation">UI & UX Designer</p>
+                            </div>
+                        </div>
+                        <!--/= End profile col =-->
+
+                        <!--= profile col =-->
+                        <div class="col-md-2">
+                            <div class="profile">
+                                <img src="images/team/3.png" alt="Team 1">
+                                <h5 class="name">Penny Huston</h5>
+                                <p class="designation">Developer</p>
+                            </div>
+                        </div>
+                        <!--/= End profile col =-->
+
+                        <!--= profile col =-->
+                        <div class="col-md-2">
+                            <div class="profile">
+                                <img src="images/team/2.png" alt="Team 1">
+                                <h5 class="name">Lennerd Shelly</h5>
+                                <p class="designation">Reviewer</p>
+                            </div>
+                        </div>
+                        <!--/= End profile col =-->
+
+                        <!--= profile col =-->
+                        <div class="col-md-2">
+                            <div class="profile">
+                                <img src="images/team/4.png" alt="Team 1">
+                                <h5 class="name">Sheldon Cupper</h5>
+                                <p class="designation">Marketer</p>
+                            </div>
+                        </div>
+                        <!--/= End profile col =-->
+
+                        <!--= profile col =-->
+                        <div class="col-md-2">
+                            <div class="profile">
+                                <img src="images/team/5.png" alt="Team 1">
+                                <h5 class="name">Ashley Cole</h5>
+                                <p class="designation">Management</p>
+                            </div>
+                        </div>
+                        <!--/= End profile col =-->
+
+                         
+                    </div>
+                </div>
+                <!--/= End Container for Profiles =-->
+            </div>
+            <!--/= End Section Body Container =-->
+        </section>
+        <!-- ========== End Section Team ========== -->
+
+        <!-- ========== Start Section Update & Support ========== -->
+        <section class="section" id="support">
+            <!--= container =-->
+            <div class="container">
+                <div class="section-header d-flex justify-content-center">
+                    <h5 class="section-title h-100">Our Team members</h5>
+                    <img src="images/right-arrow.png" class="d-none d-sm-block" style="margin-top: 10px;" alt="">
+                </div>
+                <div class="section-body">
+                    <div class="row">
+                        <!--= content =-->
+                        <div class="col-md-6 col-xs-12">
+                            <p class="justify-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatisquasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur. odit aut fugit, sed quia consequuntur magni dolores eos qui ratione. voluptatem sequi nesciunt. Neque porro quisquam est. qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <a href="#" class="btn btn-theme btn-primary">support center</a>
+                        </div>
+                        <!--/= End content =-->
+                        <!--= image =-->
+                        <div class="col-md-6 col-xs-12">
+                            <img src="images/laptop2.png" alt="Support Image" class="img-fluid">
+                        </div>
+                        <!--/= End image =-->
+                    </div>
+                </div>
+            </div>
+            <!--/= End container =-->
+        </section>
+        <!-- ========== End Section Update & Support ========== -->
+
+        <!-- ========== Start Section Hire Us ========== -->
+        <section class="section" id="hire_us">
+            <!--= container =-->
+            <div class="container">
+                <div class="hire-us-body">
+                    <div class="overlay">
+                        <div class="button-bar d-flex justify-content-between align-items-center">
+                            <h3>need creative workers?</h3>
+                            <button class="btn">hire us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/= End container =-->
+        </section>
+        <!-- ========== End Section Hire Us ========== -->
+        
+        
+        
+        
+        
+        
+        
+    </main>
+    <!--/= End Start Main  =-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row links">
+                <!--= portfolio =-->
+                <div class="col-3">
+                    <h5>portfolio</h5>
+                    <ul>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                    </ul>
+                </div>
+                <!--/= End portfolio =-->
+
+                <!--= about =-->
+                <div class="col-3">
+                    <h5>About</h5>
+                    <ul>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                    </ul>
+                </div>
+                <!--/= End about =-->
+
+                <!--= Gallery =-->
+                <div class="col-3">
+                    <h5>Gallery</h5>
+                    <ul>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                    </ul>
+                </div>
+                <!--/= End Gallery =-->
+
+                <!--= Contact =-->
+                <div class="col-3">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                        <li><a href="#">web design</a></li>
+                    </ul>
+                </div>
+                <!--/= End Contact =-->
+            </div>
+
+            <!--= row2 =-->
+             <div class="text-center mt-4">
+                <ul class="buttons list-inline">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+                <p>Copyright © 2015 Syed Miraj.All rights reserved.</p>
+             </div>
+            <!--/= End row2 =-->
+        </div>
+    </footer>
+    
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

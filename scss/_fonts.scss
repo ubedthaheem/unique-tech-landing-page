@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Source+Code+Pro:wght@400;500;700;800;900&display=swap');
+
+@mixin default-font {
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+}
+
+@mixin font-btn {
+    font-family: 'Source Code Pro';
+    font-weight: 600;
+}
+
+@mixin font-nav {
+    font-family: 'Roboto';
+    font-weight: bold;
+}

@@ -1,0 +1,89 @@
+.hero {
+    @include flexbox;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .hero-slides {
+    @include flexbox;
+    width: 100%;
+    height: 100%;
+    @include justify-content(center);
+    @include list-style(none);
+    @include margin(0);
+    @include padding(0);
+  }
+  
+  .hero-slide {
+    @include flex-grow(1);
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  
+    img {
+      @include object-fit(cover);
+      width: 100%;
+      height: 100%;
+      filter: brightness(0.8);
+    }
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+  
+    h1 {
+      @include font-size(3rem);
+      @include font-weight(bold);
+      @include margin-bottom(0.5rem);
+    }
+  
+    h2 {
+      @include font-size(2rem);
+      @include font-weight(400);
+      @include margin-bottom(1rem);
+    }
+  
+    p {
+      @include font-size(1.2rem);
+      @include margin-bottom(1rem);
+    }
+  
+    .btn {
+      @include background-color(#000);
+      @include color(#fff);
+      @include padding(1rem 2rem);
+      @include font-size(1.2rem);
+      @include font-weight(bold);
+      cursor: pointer;
+    }
+  }
+  
+  .hero-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include flexbox;
+    @include justify-content(space-between);
+    width: 100%;
+    @include padding(1rem);
+  
+    button {
+      @include background-color(transparent);
+      @include color(#fff);
+      border: none;
+      @include font-size(1.5rem);
+      cursor: pointer;
+  
+      &:hover {
+        @include color(#ccc);
+      }
+    }
+  }
+  
